@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.crashlytics)
@@ -60,6 +62,9 @@ kotlin {
             implementation(libs.firebase.auth)
             implementation(libs.firebase.crashlytics)
 
+            // Play Services
+            implementation(libs.playServices.auth)
+
             // Multiplatform Settings - Datastore
             implementation(libs.multiplatformSettings.datastore)
         }
@@ -88,7 +93,24 @@ android {
         }
     }
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     buildTypes {
+        configureEach {
+            // Read properties from root/credentials.properties
+            val credentialsProperties = rootProject.file("credentials.properties")
+            if (credentialsProperties.exists()) {
+                val credentials = Properties()
+                credentials.load(credentialsProperties.inputStream())
+                buildConfigField(
+                    "String",
+                    "WEB_CLIENT_ID",
+                    "\"${credentials.getProperty("web_client_id")}\""
+                )
+            }
+        }
         getByName("release") {
             isMinifyEnabled = false
         }

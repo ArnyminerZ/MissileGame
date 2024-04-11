@@ -13,6 +13,7 @@ import storage.settings.settings
 import ui.screen.IntroScreen
 import ui.screen.LoginScreen
 import ui.screen.LoadingScreen
+import ui.screen.MainScreen
 import ui.theme.AppTheme
 
 @Composable
@@ -26,10 +27,7 @@ fun MainComposable() {
             LaunchedEffect(isLoggedIn, navigator) {
                 when (isLoggedIn) {
                     null -> navigator.push(LoadingScreen())
-                    true -> {
-                        TODO("Main UI still not implemented")
-                    }
-
+                    true -> navigator.push(MainScreen())
                     false -> navigator.push(
                         if (introShown)
                             LoginScreen()

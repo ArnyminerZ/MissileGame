@@ -16,6 +16,7 @@ firebase-crashlytics-plugin = "2.9.9"
 google-services = "4.4.1"
 kotlin = "1.9.23"
 multiplatform-settings = "1.1.1"
+play-services-auth = "21.0.0"
 voyager = "1.0.0"
 
 [libraries]
@@ -32,6 +33,7 @@ firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics-ktx"
 multiplatformSettings-base = { module = "com.russhwolf:multiplatform-settings", version.ref = "multiplatform-settings" }
 multiplatformSettings-coroutines = { module = "com.russhwolf:multiplatform-settings-coroutines", version.ref = "multiplatform-settings" }
 multiplatformSettings-datastore = { module = "com.russhwolf:multiplatform-settings-datastore", version.ref = "multiplatform-settings" }
+playServices-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "play-services-auth" }
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
 voyager-screenModel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
 
