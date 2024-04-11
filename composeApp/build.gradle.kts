@@ -35,6 +35,9 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.ui)
 
+            // Compose - Accompanist
+            implementation(libs.compose.accompanist.permissions)
+
             // Compose - Cupertino
             implementation(libs.compose.cupertino.adaptive)
 
@@ -49,12 +52,16 @@ kotlin {
 
         androidMain.dependencies {
             implementation(libs.androidx.activity.compose)
+            implementation(libs.androidx.datastore)
             implementation(libs.compose.ui.tooling.preview)
 
             // Firebase
             implementation(libs.firebase.analytics)
             implementation(libs.firebase.auth)
             implementation(libs.firebase.crashlytics)
+
+            // Multiplatform Settings - Datastore
+            implementation(libs.multiplatformSettings.datastore)
         }
     }
 }

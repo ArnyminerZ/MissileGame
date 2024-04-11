@@ -5,8 +5,10 @@ android-minSdk = "24"
 android-targetSdk = "34"
 androidx-activityCompose = "1.8.2"
 compose = "1.6.5"
+compose-accompanist = "0.34.0"
 compose-cupertino = "0.1.0-alpha03"
 compose-plugin = "1.6.2"
+datastore = "1.0.0"
 firebase-analytics = "21.6.1"
 firebase-auth = "22.3.1"
 firebase-crashlytics = "18.6.3"
@@ -19,6 +21,8 @@ voyager = "1.0.0"
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+androidx-datastore = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+compose-accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "compose-accompanist" }
 compose-cupertino-adaptive = { module = "io.github.alexzhirkevich:cupertino-adaptive", version.ref = "compose-cupertino" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
@@ -27,6 +31,7 @@ firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "f
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics-ktx", version.ref = "firebase-crashlytics" }
 multiplatformSettings-base = { module = "com.russhwolf:multiplatform-settings", version.ref = "multiplatform-settings" }
 multiplatformSettings-coroutines = { module = "com.russhwolf:multiplatform-settings-coroutines", version.ref = "multiplatform-settings" }
+multiplatformSettings-datastore = { module = "com.russhwolf:multiplatform-settings-datastore", version.ref = "multiplatform-settings" }
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
 voyager-screenModel = { module = "cafe.adriel.voyager:voyager-screenmodel", version.ref = "voyager" }
 

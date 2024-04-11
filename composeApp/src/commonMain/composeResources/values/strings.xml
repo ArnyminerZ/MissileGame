@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="next">Next</string>
+
+    <string name="intro_welcome_title">Welcome!</string>
+    <string name="intro_welcome_message">We are glad that you have decided to join this game. Are you ready to challenge your friends? This won't be easy!</string>
+</resources>

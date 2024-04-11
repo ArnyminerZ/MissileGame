@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MissileGame</string>
+
+    <string name="intro_gender_title">How do you feel more identified?</string>
+    <string name="intro_gender_message">Please, select the gender that you feel more identified with.</string>
+    <string name="gender_masculine">Masculine</string>
+    <string name="gender_feminine">Feminine</string>
+    <string name="gender_neutral">Neutral</string>
 </resources>
