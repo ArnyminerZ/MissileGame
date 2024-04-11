@@ -13,7 +13,7 @@ import io.github.alexzhirkevich.cupertino.adaptive.AdaptiveScaffold
 import io.github.alexzhirkevich.cupertino.adaptive.ExperimentalAdaptiveApi
 
 @OptIn(ExperimentalAdaptiveApi::class, ExperimentalFoundationApi::class)
-class IntroScreen : Screen {
+class LoginScreen : Screen {
     @Composable
     override fun Content() {
         AdaptiveScaffold { paddingValues ->
