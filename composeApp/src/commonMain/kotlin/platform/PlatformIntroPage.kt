@@ -2,10 +2,15 @@ package platform
 
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.State
+import androidx.compose.runtime.derivedStateOf
 
 expect val platformIntroPages: List<PlatformIntroPage>
 
-interface PlatformIntroPage {
+abstract class PlatformIntroPage {
     @Composable
-    fun ColumnScope.Content()
+    open fun canGoNext(): State<Boolean> = derivedStateOf { true }
+
+    @Composable
+    abstract fun ColumnScope.Content()
 }

@@ -6,4 +6,15 @@
     <string name="gender_masculine">Masculine</string>
     <string name="gender_feminine">Feminine</string>
     <string name="gender_neutral">Neutral</string>
+
+    <string name="intro_location_title">Location Access</string>
+    <string name="intro_location_message">We need to access your location at all times so that the platform knows where you are, and your friends can send you missiles.</string>
+    <string name="intro_location_grant">Grant Permissions</string>
+    <string name="intro_location_grant_background">Please, select "Allow all the time"</string>
+    <string name="intro_location_granted">Permissions Granted</string>
+
+    <string name="intro_notifications_title">Notifications</string>
+    <string name="intro_notifications_message">We need permission to post notifications in order to warn you about new attacks.</string>
+    <string name="intro_notifications_grant">Grant Permission</string>
+    <string name="intro_notifications_granted">Permission Granted</string>
 </resources>

@@ -4,4 +4,7 @@
 
     <string name="intro_welcome_title">Welcome!</string>
     <string name="intro_welcome_message">We are glad that you have decided to join this game. Are you ready to challenge your friends? This won't be easy!</string>
+
+    <string name="intro_final_title">Alright!</string>
+    <string name="intro_final_message">You are ready to start playing! Press next to create your account, and connect with your friends.</string>
 </resources>
