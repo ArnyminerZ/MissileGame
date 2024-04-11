@@ -70,10 +70,10 @@ class IntroScreen : Screen {
         }
 
         val canGoNext by if (pagerState.currentPage >= commonPagesCount) {
-            platformIntroPages[pagerState.currentPage - commonPagesCount].canGoNext()
+            platformIntroPages.getOrNull(pagerState.currentPage - commonPagesCount)?.canGoNext()
         } else {
-            derivedStateOf { true }
-        }
+            null
+        } ?: derivedStateOf { true }
 
         AdaptiveScaffold(
             floatingActionButton = {
